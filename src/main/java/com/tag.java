@@ -6,12 +6,23 @@ package com;
 
 public class tag implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public tag() {
-    }
+	private java.lang.String category;
 
+	public tag() {
+	}
 
+	public java.lang.String getCategory() {
+		return this.category;
+	}
 
+	public void setCategory(java.lang.String category) {
+		this.category = category;
+	}
+
+	public tag(java.lang.String category) {
+		this.category = category;
+	}
 
 }
